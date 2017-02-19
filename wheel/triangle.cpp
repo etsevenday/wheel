@@ -12,7 +12,6 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "d3dUtility.h"
-#include "vector3.cpp"
 
 //
 // Globals
@@ -114,6 +113,11 @@ void DrawLine(Pixel start, Pixel end)
 		pixels[i] = Pixel(start.x + i, start.y + roundf(i * fgradient));
 	}
 	SetPixel(pixels, nWidth);
+}
+
+inline void Cordinate2Index(int x, int y)
+{
+
 }
 
 bool Display(float timeDelta)
